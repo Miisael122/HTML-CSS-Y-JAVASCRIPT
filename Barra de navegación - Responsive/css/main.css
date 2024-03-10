@@ -1,0 +1,141 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: sans-serif;
+    padding: 90px 20px 0px;
+}
+
+.header {
+    background-color: #CFF0FB;
+    height: 80px;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+    max-width: 992px;
+    margin: 0 auto;
+    
+}
+
+.nav-link {
+    color: black;
+    text-decoration: none;
+}
+
+.logo {
+    font-size: 30px;
+    font-weight: bold;
+    padding: 0 40px;
+    line-height: 80px;
+}
+
+.nav-menu {
+    display: flex;
+    margin-right: 40px;
+    list-style: none;
+}
+
+.nav-menu-item {
+    font-size: 18px;
+    margin: 0 10px;
+    line-height: 80px;
+    text-transform: uppercase;
+    width: max-content;
+}
+
+.nav-menu-link {
+    padding: 8px 12px;
+    border-radius: .5rem;
+}
+
+.nav-menu-link:hover {
+    background-color: #9AE3FB;
+    transition: 0.5s;
+}
+
+.toggle {
+    color: black;
+    background: none;
+    border: none;
+    font-size: 30px;
+    padding: 0 20px;
+    line-height: 60px;
+    display: none;
+}
+
+.fondo {
+    max-width: 100%;
+    
+}
+
+@media (max-width: 768px) {
+    body{
+       
+        padding: 70px;
+    }
+    
+    .header {
+       height: 60px;
+    }
+    
+    .logo {
+        font-size: 25px;
+        padding: 0 40px;
+        line-height: 60px;
+    }
+    
+    .nav-menu {
+        flex-direction: column;
+        align-items: center;
+        margin: 0;
+        background-color: #9AE3FB;
+        position: fixed;
+        right: 0;
+        top: 60px;
+        width: 100%;
+        padding: 20px 0;
+
+        height: calc(100% - 60px);
+        overflow-y: auto;
+
+        right: 100%;
+        transition: right 0.3s;
+        
+    }
+    
+    .nav-menu-item {
+        font-size: 18px;
+        margin: 0 10px;
+        line-height: 70px;
+        text-transform: uppercase;
+        width: max-content;
+    }
+    
+    .nav-menu-link {
+        padding: 8px 12px;
+        border-radius: .5rem;
+    }
+    
+    .nav-menu-link:hover {
+        background: none;
+        color: #CFF0FB;
+    }
+
+    .toggle {
+       display: block;
+       cursor: pointer;
+    }
+    
+    .nav-menu-visible {
+        right: 0;
+    }
+
+}
